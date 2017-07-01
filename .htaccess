@@ -3,7 +3,7 @@
         Options -MultiViews
     </IfModule>
 
-    RewriteEngine On
+	RewriteEngine On
 	
 	#Delete /public from path
     RewriteRule ^(.*)$ public/$1 [L]
