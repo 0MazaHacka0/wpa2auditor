@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
+    <div class="jumbotron mb0 mx">
+        <div class="container">
+            <h1 class="display-1">WPA2 Auditor</h1>
+            <p>Distributed WPA2 passphrase bruteforce</p>
+            <h2>Our features:</h2>
+            <ul>
+                <li>Fully distributed bruteforce</li>
+                <li>Easy task and dictionary upload</li>
+                <li>Real time queue monitoring</li>
+                <li>Accounts support</li>
+            </ul>
         </div>
     </div>
-</div>
 @endsection

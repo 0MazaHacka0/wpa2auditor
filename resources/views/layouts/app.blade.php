@@ -41,6 +41,15 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+
+                        <!-- Search form -->
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by ESSID" maxlength="64">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -72,6 +81,13 @@
         </nav>
 
         @yield('content')
+    </div>
+
+    <hr>
+    <div class="container">
+        <footer>
+            Copyright Nick Gant and AtomnijPchelovek 2017
+        </footer>
     </div>
 
     <!-- Scripts -->
