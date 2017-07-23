@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 
 Auth::routes();
 
-Route::get('tasks', 'TaskController@index');
+Route::get('tasks', ['as'=> 'tasks_index', 'uses' => 'TaskController@index']);
