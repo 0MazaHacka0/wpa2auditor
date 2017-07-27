@@ -16,17 +16,14 @@
 <body>
 <div id="app">
 
+    <!-- navbar -->
     @include('layouts.navbar')
 
     @yield('content')
 </div>
 
-<hr>
-<div class="container">
-    <footer>
-        Copyright Nick Gant and AtomnijPchelovek 2017
-    </footer>
-</div>
+<!-- footer -->
+@include('layouts.footer')
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
