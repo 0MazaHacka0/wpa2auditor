@@ -27,7 +27,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
@@ -36,7 +36,6 @@
 
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('tasks_index') }}">Tasks</a></li>
                     <li class="nav-item"><a class="nav-link" href=" {{ route('dicts_index') }} ">Dicts</a> </li>
                 </ul>
