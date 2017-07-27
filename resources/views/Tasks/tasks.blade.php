@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-9 offset-1">
-                
+
                 <!-- Warning -->
                 <div class="alert alert-warning" role="alert">
                     <strong>Warning!</strong> Note that some networks may occur more than one time. This happens because they have different wpa passphrases.
@@ -47,7 +47,7 @@
             <div class="col-lg-2">
 
                 <!-- Right side Bar -->
-                @include('Tasks.rightSide')
+                @include('Tasks.side')
 
             </div>
         </div>
