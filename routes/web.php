@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('tasks', ['as'=> 'tasks_index', 'uses' => 'TaskController@index']);
 
 Route::get('dicts', ['as' => 'dicts_index', 'uses' => 'DictController@index']);
+
+//Tasks
+//Create task
+Route::post('tasks', ['as' => 'tasks.store', 'uses' => 'TaskController@store']);
